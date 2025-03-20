@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7a5151;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    background-color: #dcae65;
+    border-radius: 8px;
+    box-shadow: 2px 8px 16px rgba(155, 95, 95, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #343030;
+    margin-bottom: 30px;
+}
+
+/* Input Section */
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color: #f3eded;
+    color: #333;
+    resize: none;
+    transition: all 0.5s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ee0a0a;
+    background-color: #fff;
+}
+
+button {
+    display: flex;
+ justify-content: center;
+   align-items: center;
+   margin-top: 3rem;
+   width: 40%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #af564c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f37154;
+    border: 2px black solid;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+/* Output Section */
+.output-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.output-section div {
+    width: 48%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .output-section {
+        flex-direction: column;
+    }
+
+    .output-section div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    textarea {
+        font-size: 0.8rem;
+    }
+}
