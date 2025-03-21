@@ -104,6 +104,13 @@ pre {
     overflow-x: auto;
 }
 
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
